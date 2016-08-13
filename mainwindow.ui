@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>三维MT正演建模</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionOpenFile"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>数据建模</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>剖线划分</string>
+    </property>
+    <addaction name="actionDd"/>
+    <addaction name="actionFf"/>
+    <addaction name="actionTt"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>设置测点</string>
+    </property>
+    <addaction name="actionDd_2"/>
+    <addaction name="actionDd_3"/>
+    <addaction name="actionDd_4"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpenFile">
+   <property name="text">
+    <string>OpenFile</string>
+   </property>
+  </action>
+  <action name="actionDd">
+   <property name="text">
+    <string>自动生成边界剖线</string>
+   </property>
+  </action>
+  <action name="actionFf">
+   <property name="text">
+    <string>设置剖线</string>
+   </property>
+  </action>
+  <action name="actionTt">
+   <property name="text">
+    <string>设置扩展剖线</string>
+   </property>
+  </action>
+  <action name="actionDd_2">
+   <property name="text">
+    <string>设置测点</string>
+   </property>
+  </action>
+  <action name="actionDd_3">
+   <property name="text">
+    <string>删除当前测点</string>
+   </property>
+  </action>
+  <action name="actionDd_4">
+   <property name="text">
+    <string>删除全部测点</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
