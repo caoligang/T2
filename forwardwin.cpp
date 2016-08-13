@@ -120,6 +120,6 @@ void ForwardWin::paintGL()
 
 
 
-    rTri+=5;
-    rQuad+=5;
+    rTri+=2;
+    rQuad+=2;
 }
